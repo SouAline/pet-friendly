@@ -94,6 +94,11 @@ export default function SignUp() {
             </Form>
           </div>
         </div>
+        <div className="w-100 text-center mt-2">
+        <Link className="link-none-decoration" to="/login">
+          Voltar
+        </Link>
+      </div>
       </>
     )
 }
