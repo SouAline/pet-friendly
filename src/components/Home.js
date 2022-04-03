@@ -1,28 +1,13 @@
-import React, { useState } from "react";
-import { Form, Button, Alert } from "react-bootstrap";
+import React from "react";
 import { useAuth } from "../contexts/AuthContext";
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import avaliar from "../img/logoAvaliar.png";
 import top from "../img/logoTop.png";
 import perfil from "../img/logoPerfil.png";
 import inicio from "../img/logoInicio.png";
-import localizacao from "../img/logoUser.png";
-import user2 from "../img/logoUser2.png";
 
 export default function Home() {
-  const [error, setError] = useState("");
-  const { currentUser, logout } = useAuth();
-  const history = useHistory();
-
-  async function handleLogout() {
-    setError("");
-    try {
-      await logout();
-      history.push("/login");
-    } catch {
-      setError("Failed to logout");
-    }
-  }
+  const { currentUser } = useAuth();
 
   return (
     <div>
@@ -62,7 +47,7 @@ export default function Home() {
           <img className="img-hover" src={inicio} alt="Logo" />
           <img className="img-hover" src={top} alt="Logo" />
           <img className="img-hover" src={avaliar} alt="Logo" />
-          <img className="img-hover" src={perfil} alt="Logo" />
+          <Link to="/profile"><img className="img-hover" src={perfil} alt="Logo" /></Link>
         </div>
       </div>
     </div>
