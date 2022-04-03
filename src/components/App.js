@@ -24,7 +24,7 @@ function App() {
               <Route path="/login" component={Login} />
               <Route path="/signUp" component={SignUp} />
               <PrivateRoute path="/home" component={Home} />
-              <Route path="/profile" component={Profile} />
+              <PrivateRoute path="/profile" component={Profile} />
             </Switch>
           </AuthProvider>
         </BrowserRouter>
