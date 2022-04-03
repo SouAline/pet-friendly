@@ -13,9 +13,9 @@ function App() {
     <div
       id="main"
       className="d-flex align-items-center justify-content-center"
-      style={{ maxWidth: "400px" }}
+      style={{ maxWidth: "744px" }}
     >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div className="w-100" style={{ maxWidth: "744px" }}>
         <BrowserRouter>
           <AuthProvider>
             <Switch>

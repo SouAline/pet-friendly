@@ -27,6 +27,13 @@ body {
 .link-none-decoration {
     color: #f2f2f2;
 }
+.user{
+     
+    font-family: "Nunito", sans-serif;
+    color: #e9e9e9;
+    font-weight: bold;
+    margin: 10px;
+}
 
 #logo {
     width: 100%;
@@ -38,7 +45,7 @@ body {
     margin: 5px;
 }
 #topo{
-    width: 50%;
+    width: 100%;
 }
 
 .frame{
@@ -49,18 +56,52 @@ body {
 
 .button-white{
     font-family: "Nunito", sans-serif;
-    font-size: 13px;
+    font-size: auto;
     background-color: #e9e9e9;
-    margin: 3px;
+    width: auto;
+    margin: 0.1em;
     color: #4c1f02;
     border-radius: 20px;
-    padding: 0 5 0 5;
+    padding: 0% 2% 0% 2%;
 }
 .input{
-    width: 400px;
-    padding: 8px;
+    font-size: 1.2em;
+    padding: 6px;
+    width: 98%;
     box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.40);
     border-radius: 10px;
     margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 
+}
+
+@media(max-width: 500px) {
+    .button-white{
+        font-family: "Nunito", sans-serif;
+        font-size: 13px;
+        background-color: #e9e9e9;
+        width: auto;
+        margin: 0.1em;
+        color: #4c1f02;
+        border-radius: 20px;
+        padding: 0% 2% 0% 2%;
+    }
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.img-hover:hover{
+    background-color: rgb(137, 137, 137);
+    border-radius: 15px;
 }
