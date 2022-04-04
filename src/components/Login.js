@@ -27,49 +27,55 @@ export default function Login() {
   }
 
   return (
-    <>
-      <div>
-        <div>
-          <div>
-            <img src={logo} id="logo" alt="Logo" />
-          </div>
+    <>    
+          <header>
+            <img src={logo} id="logo" alt="Logo comercial Miaut. Ícone com um gato e um cachorro" title="Logo comercial Miaut. Ícone com um gato e um cachorro"/>
+          </header>
           {error && <Alert variant="warning">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
+          <main className="teste">
+          <Form onSubmit={handleSubmit} tabIndex="1">
             <Form.Group id="email">
-              {/* <Form.Label>Email</Form.Label> */}
-              <Form.Control
+              <Form.Label hidden aria-labelledby="email" for="login-email">Email</Form.Label>
+              <Form.Control  
+                id="login-email"
+                name="email"              
                 type="email"
                 placeholder="E-mail"
                 ref={emailRef}
+                
                 required
               ></Form.Control>
             </Form.Group>
             <Form.Group id="password">
-              {/* <Form.Label>Password</Form.Label> */}
-              <Form.Control
-                id="margin"
+              <Form.Label hidden aria-labelledby="password" for="login-password" >Password</Form.Label> 
+              <Form.Control  
+                id="login-password"            
+                className="margin"
                 type="password"
                 placeholder="Senha"
                 ref={passwordRef}
                 required
               ></Form.Control>
             </Form.Group>
-            <Button
+            <Button   
+                       
               disabled={loading}
               id="button-orange"
               className="w-100 mt-4"
               type="submit"
+              role="Entrar"
             >
               Entrar
             </Button>
           </Form>
-        </div>
-      </div>
-      <div className="w-100 text-center mt-2">
+          </main>
+      
+     
+      <footer className="w-100 text-center mt-2">
         <Link className="link-none-decoration" to="/signUp">
           Primeiro Acesso
         </Link>
-      </div>
+      </footer>
     </>
   );
 }
