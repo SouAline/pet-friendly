@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Miaut App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto de bloco proposto para entrega final e consolidação dos conhecimentos adquiridos ao longo dos estudos realizados na etapa, baseado no desenvolvimento de uma aplicação de viés Pet Friendly, ou seja, integração e socialização de ambientes comerciais aos animais domésticos.
 
-## Available Scripts
+## :bar_chart: Status do Projeto
 
-In the project directory, you can run:
+### Features :game_die:
+- [x] Cadastro de Novo Usuário
+- [x] Login de Usuário
+- [x] Validação de Usuário
+- [x] Tela Inicial
+- [x] Mapa de Localização
 
-### `npm start`
+## :memo: Pré-requisitos
+* Necessária a instalação do [NodeJS](https://nodejs.org/).
+* Utilização de um bom editor de sua preferência para execução e manipulação do código, como por exemplo o [Visual Studio Code](https://code.visualstudio.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛠 Tecnologias
+As seguintes ferramentas foram usadas na construção do projeto:
+- [React](https://pt-br.reactjs.org/)
+- [React Starter Kit](https://github.com/facebook/create-react-app)
+- [NodeJS](https://nodejs.org/en/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Figma](https://www.figma.com/)
+- [Wave](https://wave.webaim.org/extension/)
+- [GitHub](https://github.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Rodando o Projeto:
+No terminal, entre com o caminho para o diretório do projeto e aplique o seguinte comando:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm install`
+Baixa os módulos necessários para o projeto.
 
 ### `npm run build`
+Monta um build da aplicação local, configurando para modo de produção e melhora sua performance de execução.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm start`
+Roda a aplicação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Relatório de Desenvolvimento :chart_with_upwards_trend:
+O desenvolvimento foi dividido em algumas etapas, mas inicialmente surgiu à partir de um brainstorm sobre o tema Pet Friendly e a necessidade de integrar um serviço que pudesse mapear e atender a demanda crescente de usuários que praticam a adoção de animais de estimação e que muitas vezes gostariam de levá-los consigo para diversos lugares, seja à passeio ou em uma viagem de trabalho.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O próximo passo foi documentar as histórias do usuário, dando visibilidade ao problema abordado, onde trata o conflito entre a necessidade e a carência nesse tipo de serviço, e assim, explorando as possibilidades de se implementar tal sistema que pudesse ao menos esboçar uma nova perspectiva para o caso.
 
-### `npm run eject`
+Feito toda a etapa de discovery, adentramos ao primeiro tipo de implementação, a prototipagem das telas do projeto discutido anteriormente. Nesta etapa discutimos paletas, iconografia, design intuitivo, limpeza visual entre outros tópicos tangíveis para esse tipo de abordagem. Em seguida acrescentamos o fluxo entre as telas e obtivemos o resultado da navegação e vislumbramos como seria o primeiro contato do usuário final com a aplicação, tentando abstrair quaisquer elementos que pudessem gerar complexidade ou ambiguidade.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Munidos com todo o histórico de pesquisa e prototipagem, iniciou-se então a etapa de criar o projeto, baseado em React (JavaScript), onde foi implementado juntamente à API Google Firebase, para o gerenciamento de usuários e autenticação dos mesmos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O projeto possui uma arquitetura de Componentes, onde cada um fica responsável por uma funcionalidade única na aplicação, com isso ganhamos uma flexibilidade na manutenção e uma maior praticidade na hora de implementar o front-end, pois cada um opera sua lógica diretamente com seu render visual.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Feita a lógica, adequamos e adaptamos os elementos de entrega visual, buscando corresponder as expectativas prototipadas anteriormente, e dentro desse processo utilizamos recursos para responsividade e acessibilidade, uma vez que a aplicação foi desenvolvida originalmente para ser portada em dispositivos móveis.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Durante todo o processo foi de tamanha importância a documentação, nos amparando e servindo como pilar para construção da aplicação, revisitando pontos no documento de requisitos, olhando novamente o fluxo de telas, ou até mesmo gerando novos questionamentos em busca de uma maior otimização dos recursos e serviços prestados.
 
-## Learn More
+E por fim chegamos ao final do ciclo, pautado nas diretrizes e metodologias Scrum, seguidos do desenvolvimento ágil para que pudesse viabilizar o resultado apresentado.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💻 Autor
+- Aline Silveira de Souza - Scrum Master, design e desenvolvedora Front-End.
+- Camila Nunes De Castro Cerqueira - Desenvolvedora Front-End.
+- Ingrid Nogueira - Desenvolvedora Front-End.
+- Julia Paz - Desenvolvedora Front-End.
+- Renan Ferreira Marcílio - Desenvolvedor Back-End.
