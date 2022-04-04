@@ -4,11 +4,11 @@ import logo from "../img/logoMiaut.png";
 
 export default function Miaut() {
   return (
-    <div>
-      <div>
+    <>      
         <header>
-          <img src={logo} id="logo" alt="Logo comercial Miaut. Ícone com um gato e um cachorro" title="Logo comercial Miaut. Ícone com um gato e um cachorro" />
+          <img src={logo} id="logo" alt="Logo comercial Miaut. Ícone com um gato e um cachorro" />
         </header>
+        <main>
         <Link
           to="/login"
           id="button-orange"
@@ -17,10 +17,12 @@ export default function Miaut() {
         >
           Entrar
         </Link>
+        </main>
+        <footer className="w-100 text-center mt-2">
         <Link id="align" className="link-none-decoration" to="/signUp">
           Primeiro Acesso
         </Link>
-      </div>
-    </div>
+        </footer>      
+    </>
   );
 }

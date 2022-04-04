@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../img/logoMiaut.png";
 
-export default function Profile() {
+export default function Rate() {
   return (
     <div>
       <div>

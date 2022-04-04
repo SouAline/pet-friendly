@@ -7,6 +7,14 @@ import Login from "./Login";
 import PrivateRoute from "./PrivateRoute";
 import Miaut from "./Miaut";
 import Profile from "./Profile"
+import Top10 from "./Top10";
+import Rate from "./Rate";
+import Praia from "./Praia";
+import Shopping from "./Shopping";
+import Clube from "./Clube";
+import Praca from "./Praca";
+import Hoteis from "./Hoteis";
+import Confeitaria from "./Confeitaria";
 import "../style.css";
 
 function App() {
@@ -25,6 +33,14 @@ function App() {
               <Route path="/signUp" component={SignUp} />
               <PrivateRoute path="/home" component={Home} />
               <PrivateRoute path="/profile" component={Profile} />
+              <PrivateRoute path="/top10" component={Top10} />
+              <PrivateRoute path="/rate" component={Rate} />
+              <PrivateRoute path="/praia" component={Praia} />
+              <PrivateRoute path="/shopping" component={Shopping} />
+              <PrivateRoute path="/clube" component={Clube} />
+              <PrivateRoute path="/praca" component={Praca} />
+              <PrivateRoute path="/hoteis" component={Hoteis} />
+              <PrivateRoute path="/confeitaria" component={Confeitaria} />
             </Switch>
           </AuthProvider>
         </BrowserRouter>

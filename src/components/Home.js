@@ -13,33 +13,33 @@ export default function Home() {
     <>
       <header>
         <h1 hidden>Home</h1>
-      <span className="user">Olá, {currentUser.email}</span>
+        <span className="user">Olá, {currentUser.email.substring(0,currentUser.email.indexOf('@')).toUpperCase()}</span>
         <div id="topo">
           <label forhtml="search" aria-labelledby="search" hidden> Busca</label>
           <input className="input" type="text" placeholder="Seu local" id="search"></input>
         </div>
       <section className="align">
-        <button type="button" className="button-white">
+      <Link to="/home"><button type="button" className="button-white">
           Restaurante
-        </button>
-        <button type="button" className="button-white">
+        </button></Link>
+        <Link to="/praia"><button type="button" className="button-white">
           Praia
-        </button>
-        <button type="button" className="button-white">
+        </button></Link>
+        <Link to="/shopping"><button type="button" className="button-white">
           Shopping
-        </button>
-        <button type="button" className="button-white">
+        </button></Link>
+        <Link to="/clube"><button type="button" className="button-white">
           Clube
-        </button>
-        <button type="button" className="button-white">
+        </button></Link>
+        <Link to="/praca"><button type="button" className="button-white">
           Praça
-        </button>
-        <button type="button" className="button-white">
+        </button></Link>
+        <Link to="/hoteis"><button type="button" className="button-white">
           Hotéis
-        </button>
-        <button type="button" className="button-white">
+        </button></Link>
+        <Link to="/confeitaria"><button type="button" className="button-white">
           Confeitaria
-        </button>
+        </button></Link>
       </section>
       </header>
       <main>
@@ -50,8 +50,8 @@ export default function Home() {
         </main>
         <footer className="icons">
           <img className="img-hover" src={inicio} alt="Ícone de direcionamento para a Home" />
-          <img className="img-hover" src={top} alt="Ícone de direcionamento para o Topo" />
-          <img className="img-hover" src={avaliar} alt="Ícone de direcionamento para a Avaliação" />
+          <Link to="/top10"><img className="img-hover" src={top} alt="Ícone de direcionamento para o Topo" /></Link>
+          <Link to="/rate"><img className="img-hover" src={avaliar} alt="Ícone de direcionamento para a Avaliação" /></Link>
           <Link to="/profile"><img className="img-hover" src={perfil} alt="Ícone de direcionamento para o perfil" /></Link>
         </footer>
       
