@@ -6,9 +6,9 @@ export default function Miaut() {
   return (
     <div>
       <div>
-        <div>
-          <img src={logo} id="logo" alt="Logo" />
-        </div>
+        <header>
+          <img src={logo} id="logo" alt="Logo comercial Miaut. Ícone com um gato e um cachorro" title="Logo comercial Miaut. Ícone com um gato e um cachorro" />
+        </header>
         <Link
           to="/login"
           id="button-orange"

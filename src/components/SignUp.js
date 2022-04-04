@@ -37,68 +37,78 @@ export default function SignUp() {
     
     return (
         <>
-        <div> 
-          <div>
-            <div>
-              <img src={logo} id="logo" alt="Logo" />
-            </div>
+      
+          
+            <header>
+              <img src={logo} id="logo" alt="Logo comercial Miaut. Ícone com um gato e um cachorro" title="Logo comercial Miaut. Ícone com um gato e um cachorro" />
+            </header>
             {error && <Alert variant="warning">{error}</Alert>}
-            <Form onSubmit={handleSubmit}>
-              <Form.Group id="nome">
-                {/* <Form.Label>Email</Form.Label> */}
+            <main>
+            <Form onSubmit={handleSubmit} tabIndex="1">
+              <Form.Group id="name">
+                <label hidden  for="signupname">Nome</label> 
                 <Form.Control
-                  type="nome"
+                  id="signupname"
+                  type="name"
                   placeholder="Nome"
                   ref={nomeRef}
-                  required
+                  tabIndex="0"
+                  required                  
                 ></Form.Control>
               </Form.Group>
-              <Form.Group id="email">
-                {/* <Form.Label>Email</Form.Label> */}
+              <Form.Group id="signup-email">
+               <Form.Label hidden  for="signupemail">Email</Form.Label>
                 <Form.Control
-                  id="margin"
+                  id="signupemail"                  
+                  className="margin"
                   type="email"
                   placeholder="E-mail"
                   ref={emailRef}
-                  required
+                  tabIndex="1"
+                  required                  
                 ></Form.Control>
               </Form.Group>
-              <Form.Group id="password">
-                {/* <Form.Label>Password</Form.Label> */}
+              <Form.Group >
+                <Form.Label hidden for="signupPassword">Password</Form.Label>
                 <Form.Control
-                  id="margin"
+                  id="signupPassword"                 
+                  className="margin"
                   type="password"
                   placeholder="Senha"
                   ref={passwordRef}
-                  required
+                  tabIndex="2"
+                  required                  
                 ></Form.Control>
               </Form.Group>
-              <Form.Group id="password">
-                {/* <Form.Label>Password</Form.Label> */}
-                <Form.Control
-                  id="margin"
+              <Form.Group id="check-password">
+              <Form.Label hidden  for="checkpassword">Password</Form.Label>
+                <Form.Control  
+                  id="checkpassword"               
+                  className="margin"
                   type="password"
                   placeholder="Confirme a senha"
                   ref={passwordConfirmRef}
-                  required
+                  tabIndex="3"
+                  required                 
                 ></Form.Control>
               </Form.Group>
-              <Button
+              <Button                
                 disabled={loading}
                 id="button-orange"
                 className="w-100 mt-4"
                 type="submit"
+                role="Cadastrar"
               >
                 Cadastrar
               </Button>
             </Form>
-          </div>
-        </div>
-        <div className="w-100 text-center mt-2">
+            </main>
+        
+        <footer className="w-100 text-center mt-2">
         <Link className="link-none-decoration" to="/login">
           Voltar
         </Link>
-      </div>
+      </footer>
       </>
     )
 }
