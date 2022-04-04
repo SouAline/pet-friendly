@@ -6,7 +6,7 @@ import Home from "./Home";
 import Login from "./Login";
 import PrivateRoute from "./PrivateRoute";
 import Miaut from "./Miaut";
-import Profile from "./Profile"
+import Profile from "./Profile";
 import "../style.css";
 
 function App() {

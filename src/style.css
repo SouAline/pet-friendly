@@ -37,8 +37,8 @@ body {
 
 #logo {
     width: 100%;
-    margin-bottom: 15px;
-    margin-left: 10px;
+    padding:15% 8%;
+    box-sizing: border-box;
 }
 
 #align {
@@ -46,11 +46,13 @@ body {
 }
 #topo{
     width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
 }
 
 .frame{
     width: 100%;
-    height: 500px;
+    height: 700px;
     margin-top: 10px;
 }
 
@@ -66,14 +68,10 @@ body {
 }
 .input{
     font-size: 1.2em;
-    padding: 6px;
-    width: 98%;
+    width: 100%;
     box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.40);
     border-radius: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-
+    padding: 2%; 
 }
 
 .link-none-decoration{
@@ -107,10 +105,21 @@ body {
 .icons{
     display: flex;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
 }
 .img-hover:hover{
     background-color: rgb(137, 137, 137);
     border-radius: 15px;
+}
+#email{
+    width: 100%;
+    padding: 0% 5%;
+    box-sizing: border-box;
+}
+#password{
+    width: 100%;
+    padding: 0% 5%;
+    box-sizing: border-box;
 }
